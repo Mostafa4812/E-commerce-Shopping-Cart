@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppingCart</title>
+    <!--  -->
+    <link rel="stylesheet" href="createProduct.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="brand">shopping cart</a>
+            <h2>Product Creation</h2>
+            <ul class="links">
+                <li><a href="login.html">sign in</a></li>
+                <li><a href="register.html">sign up</a></li>
+            </ul>
+            <ul class="user-info">
+                <li><img class="avatar" src="images/male-avatar.jpg" alt=""><a href="profile.html" class="user_name"></a><bdi>اهلا ,</bdi></li>
+                <li><a href="index.html" class="logout">logOut</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="container">
+            <form action="" id="createForm">
+                <input type="text" name="Pname" id="Pname" placeholder="Product Name">
+                <input type="text" name="Pdesc" id="Pdesc" placeholder="Product Description">
+                <select name="Pprice" id="Pprice">
+                    <option hidden>Select Price</option>
+                    <option >700</option>
+                    <option >600</option>
+                    <option >1600</option>
+                    <option >2600</option>
+                    <option >100</option>
+                    <option >200</option>
+                    <option >2500</option>
+                </select>
+                <!-- <label for="file-upload" class="custom-file-upload">
+                    Choose Image
+                </label>
+                <span id="file-name">No file chosen</span> -->
+                <input id="file-upload" type="file" name="Pimg" accept="image/*">
+                <input type="submit" value="Create" class="create-product-btn">
+            </form>
+        </div>
+    </section>
+    <script src="createProduct.js"></script>
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>

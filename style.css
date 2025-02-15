@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    font-family: "Oswald";
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+header{
+    height: 8vh;
+    background-color: #333;
+}
+.avatar{
+  background-color: #f50;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  position: absolute;
+  right: 280px;
+}
+
+bdi{
+    color: #f50;
+    font-size: 20px;
+}
+.fa-cart-shopping{
+    color: rgb(19, 18, 18);
+    position: relative;
+    font-size: 30px;
+    transform: translate(400px,0px);
+}
+.cart-sign{
+    position: relative;
+
+}
+.view_products_draft{
+    width: 20%;
+    height: auto;
+    position:absolute;
+    display: none;
+    top: 8%;
+    left: 62%;
+    padding: 5px;
+
+    background-color: #f50;
+    border: 2px solid #333;
+}
+
+.btn_cart{
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding-block: 10px;
+    background-color: #5f5050;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Oswald";
+    border: none;
+    /* z-index: 22; */
+}
+.btn_cart:hover{
+    background-color: green;
+}
+.counter{
+    position: absolute;
+    background-color: #f50;
+    width: 70%;
+    height: 70%;
+    top: -30%;
+    left: 45%;
+    border-radius: 50%;
+    font-size: 17px;
+    text-align: center;
+}
+.brand{
+    font-size: 25px;
+    color: #fff;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+nav ul{
+    font-weight: bold;
+    display: flex;
+    list-style: none;
+}
+nav a{
+    text-transform: capitalize;
+    color: white;
+    margin-inline: 10px;
+    padding-inline: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.title-home{
+    text-align: center;
+    background-color: rgb(43, 43, 194);
+}
+.user-info{
+    display: none;
+}
+/* products ================================================================*/
+.home{
+    padding: 5px;
+    /* width: 100vw; */
+}
+.container{
+    width: 60%;
+    position: relative;
+}
+.productsFilter{
+    position: absolute;
+    top: 5px;
+    right: -510px;
+    padding: 10px;
+    /* z-index: -1; */
+}
+.productsFilter .list{
+    border:2px solid #333 ;
+    padding: 10px;
+}
+
+.clickableList{
+    cursor: pointer;
+}
+.list{
+    display: none;
+}
+
+#search{
+    width: 100%;
+    padding: 10px;
+    margin-block: 10px;
+    font-size: 15px;
+    font-family: "Oswald";
+    border-radius: 6px;
+    border: 2px solid #a8a1a1;
+}
+#search:focus{
+    border: 2px solid #a8a1a1;
+ background-color: #f50;
+}
+.title{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+}
+.product-img{
+    padding: 20px;
+    width: 20%;
+    border: 2px solid #333;
+}
+.product-card{
+    display: flex;
+    border: 2px solid black;
+    padding: 8px;
+}
+.product-cards{
+    margin-bottom: 5px;
+}
+.product-actions{
+    display: flex;
+    justify-self: end;
+}
+.add-cart{
+    padding: 8px;
+    position: relative;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: forestgreen;
+}
+.add-cart:hover,.editProduct:hover,.deleteProduct:hover{
+    background-color: #b1aeae;
+}
+.editProduct{
+    padding: 10px;
+    margin-inline: 5px;
+    position: relative;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #f50;
+}
+.deleteProduct{
+    padding: 10px;
+    margin-inline: 5px;
+    position: relative;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: red;
+}
+.fa-cart-plus{
+    padding: 3px;
+    font-size: 15px;
+}
+/* .fa-cart-shopping::after{
+    position: absolute;
+    content: "";
+    height: 112%;
+    top: -2px;
+    left: 26px;
+    border-right: 2px solid black;
+} */
+.favorite{
+    padding: 5px;
+    font-size: 23px;
+    cursor: pointer;
+}
+.favorite_icon{
+    font-size: 30px;
+    color:gold;
+    display: flex;
+    cursor: pointer;
+}
+.product-details{
+    padding-left: 10px;
+    width: 100%;
+}
+.product-details .info{
+    margin-top: 20px;
+}
+.product-details .info>span,
+.product-details .size-price>span
+{
+    font-weight: bold;
+}
+.size-price{
+    display: flex;
+    margin-top: 10px;
+}
+.createProduct{
+    display: flex;
+    font-size: 40px;
+    justify-content: end;
+    position: absolute;
+    right: 10px;
+    text-decoration: none;
+    color: #f50;
+}
+.createProduct:hover{
+    color: green;
+    cursor: pointer;
+}
+/*  */
+.noProducts{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}

@@ -1,0 +1,13 @@
+.avatarImg{
+    width: 30%;
+    height: 30%;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mail{
+    text-align: center;
+}

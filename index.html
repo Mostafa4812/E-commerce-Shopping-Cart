@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppingCart</title>
+    <!--  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="brand">shopping cart</a>
+            <a href="#" class="cart-sign"><i class="fa-solid fa-cart-shopping">
+                <div class="counter"></div>
+            </i></a>
+            <div class="view_products_draft">
+                <p>
+                    <!-- <span>+</span>
+                    <span>-</span> -->
+                </p>
+                <button class="btn_cart">View Products</button>
+            </div>
+            <ul class="favorite_icon">
+                <i class="fa-solid fa-star"></i>
+            </ul>
+            <ul class="links">
+                <li><a href="login.html">sign in</a></li>
+                <li><a href="register.html">sign up</a></li>
+            </ul>
+            <ul class="user-info">
+                <li><img class="avatar" src="images/male-avatar.jpg" alt=""><a href="profile.html" class="user_name"></a><bdi>اهلا ,</bdi></li>
+                <li><a href="index.html" class="logout">logOut</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="container">
+            <input type="search" name="search" id="search" placeholder="Search By Name">
+            <div class="product-cards"></div>
+            <div class="createProduct"></div>
+            <!-- <a href="createProduct.html" class="createProduct">
+                <i class="fas fa-plus-circle"></i>
+            </a> -->
+            <div class="productsFilter">
+                <i class="fa fa-filter clickableList"></i>
+                <span class="clickableList">Filter By Price</span>
+                <div class="list">
+                    <input type="checkbox" value="400" class="inp" id="1">
+                    <label for="1">less that 400 $</label><br>
+                    <input type="checkbox" value="1000" class="inp" id="2">
+                    <label for="2">from 400 to 1000 $</label><br>
+                    <input type="checkbox" value="2000" class="inp" id="3">
+                    <label for="3">greater that 2000 $</label>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
