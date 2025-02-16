@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html >
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShoppingCart</title>
+    <title>Home</title>
     <!--  -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-rtl.css">
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,7 @@
 <body>
     <header>
         <nav>
-            <a href="index.html" class="brand">shopping cart</a>
+            <a href="index.html" class="brand" id="logo"></a>
             <a href="#" class="cart-sign"><i class="fa-solid fa-cart-shopping">
                 <div class="counter"></div>
             </i></a>
@@ -31,12 +32,17 @@
                 <i class="fa-solid fa-star"></i>
             </ul>
             <ul class="links">
-                <li><a href="login.html">sign in</a></li>
+                <li><a href="login.html" id="signIn">sign in</a></li>
                 <li><a href="register.html">sign up</a></li>
             </ul>
             <ul class="user-info">
-                <li><img class="avatar" src="images/male-avatar.jpg" alt=""><a href="profile.html" class="user_name"></a><bdi>اهلا ,</bdi></li>
-                <li><a href="index.html" class="logout">logOut</a></li>
+                
+                <li><span id="great">Hello,</span><a href="profile.html" class="user_name"></a></li>
+                <li><img class="avatar" src="images/male-avatar.jpg" alt=""></li>
+                <li><a href="index.html" class="logout" id="logout">logOut</a></li>
+                <li><button onclick="switchLanguage('en')">English</button>
+                    <button onclick="switchLanguage('ar')">العربية</button>
+                </li>
             </ul>
         </nav>
     </header>
@@ -45,19 +51,16 @@
             <input type="search" name="search" id="search" placeholder="Search By Name">
             <div class="product-cards"></div>
             <div class="createProduct"></div>
-            <!-- <a href="createProduct.html" class="createProduct">
-                <i class="fas fa-plus-circle"></i>
-            </a> -->
             <div class="productsFilter">
                 <i class="fa fa-filter clickableList"></i>
-                <span class="clickableList">Filter By Price</span>
+                <span class="clickableList" id="filter">Filter by Price</span>
                 <div class="list">
                     <input type="checkbox" value="400" class="inp" id="1">
-                    <label for="1">less that 400 $</label><br>
+                    <label for="1" id="low_price">less that 400 $</label><br>
                     <input type="checkbox" value="1000" class="inp" id="2">
-                    <label for="2">from 400 to 1000 $</label><br>
+                    <label for="2" id="mid_price">from 400 to 1000 $</label><br>
                     <input type="checkbox" value="2000" class="inp" id="3">
-                    <label for="3">greater that 2000 $</label>
+                    <label for="3" id="high_price">greater that 2000 $</label>
                 </div>
             </div>
         </div>

@@ -1,0 +1,11 @@
+html[lang="ar"] {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Cairo', sans-serif;
+}
+
+html[lang="en"] {
+    direction: ltr;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+}

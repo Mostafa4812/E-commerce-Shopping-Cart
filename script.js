@@ -38,8 +38,8 @@ let drawProductsUI=function (allProducts){
                 <img class="product-img" src=${item.img} alt="iphone-image">
                 <div class="product-details">
                     <a href='cartDetails.html' onclick='getPrdID(${item.id})' class="title">${item.name}</a>
-                    <p class="info"><span>Specs:</span>${item.specs}</p>
-                    <span class="size-price"><span>Price: $</span>${item.price_size}</span>
+                    <p class="info" ><span id="specs">Specs:</span>${item.specs}</p>
+                    <span class="size-price" ><span id="price">Price: $</span>${item.price_size}</span>
                     <span class="product-actions">
                     ${item.isMe === 'y'||item.isMe ==='n'? `<button class="add-cart" onclick="addPrdToCart(${item.id})"><i class="fa-sharp fa-solid fa-cart-plus"></i></button>`:''}
                         <i class="favorite fa-solid fa-heart" onclick='favoriteProduct(${item.id},event)'}"></i>
@@ -287,3 +287,49 @@ document.querySelectorAll('.inp').forEach((checkbox) => {
     });
 });
 
+let translations = {};  
+let currentLang = localStorage.getItem("lang") || "en"; // Load saved language or default to English
+
+// Function to load translations from JSON
+async function loadTranslations() {
+    try {
+        const response = await fetch("translations.json"); // Load JSON file
+        translations = await response.json();
+        updateUI(); // Apply translations after loading
+    } catch (error) {
+        console.error("Error loading translations:", error);
+    }
+}
+
+// Function to update the UI with the current language
+function updateUI() {
+    document.getElementById("great").textContent = translations[currentLang].great;
+    document.getElementById("search").placeholder = translations[currentLang].search;
+    document.getElementById("logout").textContent = translations[currentLang].logout;
+    document.getElementById("logo").textContent = translations[currentLang].logo;
+    document.getElementById("filter").textContent = translations[currentLang].filter;
+    document.getElementById("low_price").textContent = translations[currentLang].low_price;
+    document.getElementById("mid_price").textContent = translations[currentLang].mid_price;
+    document.getElementById("high_price").textContent = translations[currentLang].high_price;
+    // document.getElementById("signIn").textContent = translations[currentLang].signIn;
+}
+
+// Function to switch language
+function switchLanguage(lang) {
+    console.log("Switching to:", lang); // Debugging
+
+    currentLang = lang;
+    localStorage.setItem("lang", lang); // Save preference
+
+        updateUI();
+    
+
+    document.documentElement.setAttribute("lang", lang);
+}
+
+
+// Run the script when the page loads
+document.addEventListener("DOMContentLoaded", loadTranslations);
+
+
+console.log(document.documentElement.lang);

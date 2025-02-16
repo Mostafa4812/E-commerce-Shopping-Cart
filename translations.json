@@ -1,0 +1,25 @@
+{
+    "en": {
+        "great": "Hello",
+        "search": "Search for products...",
+        "filter": "Filter by Price",
+        "signIn":"signIn",
+        "logo":"shopping",
+        "logout": "Logout",
+        "low_price": "Below $400",
+        "mid_price": "$400 - $1000",
+        "high_price": "Above $1000"
+    },
+    "ar": {
+        "great": "مرحبًا بك",
+        "search": "ابحث عن المنتجات...",
+        
+        "filter": "تصفية حسب السعر",
+        "logout": "تسجيل الخروج",
+        "logo":"تسوق",
+        "signIn":"تسجيل الدخول",
+        "low_price": "أقل من 400 دولار",
+        "mid_price": "400 - 1000 دولار",
+        "high_price": "أكثر من 1000 دولار"
+    }
+}

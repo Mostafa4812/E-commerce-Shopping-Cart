@@ -16,26 +16,30 @@ header{
     background-color: #333;
 }
 .avatar{
-  background-color: #f50;
+  /* background-color: #f50; */
+  
   width: 35px;
   height: 35px;
   border-radius: 50px;
-  position: absolute;
-  right: 280px;
-}
 
-bdi{
+}
+#great{
+   /* padding-left:30px; */
+   font-size: 20px;
+   color: #f50;
+}
+/* bdi{
     color: #f50;
     font-size: 20px;
-}
+} */
 .fa-cart-shopping{
     color: rgb(19, 18, 18);
-    position: relative;
+    /* position: relative; */
     font-size: 30px;
     transform: translate(400px,0px);
 }
 .cart-sign{
-    position: relative;
+    
 
 }
 .view_products_draft{

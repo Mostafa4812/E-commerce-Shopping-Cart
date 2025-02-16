@@ -1,0 +1,42 @@
+{
+    "en": {
+        "products": [
+            {
+                "name": "Iphone 13 Pro",
+                "specs": "Storage 128GB, 8GB RAM, AMOLED screen, iOS OS, new device from Trade-Line"
+            },
+            {
+                "name": "Smart Watch",
+                "specs": "Apple Watch HK10 Pro Max, AMOLED screen, iOS OS, new device from Trade-Line"
+            },
+            {
+                "name": "Mac Air 22",
+                "specs": "Apple Mac, Storage 3TB, 16GB RAM, AMOLED screen, 16GB VGA, new device from Trade-Line"
+            },
+            {
+                "name": "VIDVIE Headphone",
+                "specs": "Battery 3hr, Bluetooth 9m, multi-functionality, noise cancellation, natural leather"
+            }
+        ]
+    },
+    "ar": {
+        "products": [
+            {
+                "name": "آيفون 13 برو",
+                "specs": "تخزين 128 جيجابايت، 8 جيجابايت رام، شاشة أموليد، نظام iOS، جهاز جديد من Trade-Line"
+            },
+            {
+                "name": "ساعة ذكية",
+                "specs": "ساعة آبل HK10 Pro Max، شاشة أموليد، نظام iOS، جهاز جديد من Trade-Line"
+            },
+            {
+                "name": "ماك آير 22",
+                "specs": "آبل ماك، تخزين 3 تيرابايت، 16 جيجابايت رام، شاشة أموليد، كرت شاشة 16 جيجابايت"
+            },
+            {
+                "name": "سماعة VIDVIE",
+                "specs": "بطارية تدوم 3 ساعات، بلوتوث 9 أمتار، وظائف متعددة، عزل الضوضاء، جلد طبيعي"
+            }
+        ]
+    }
+}
